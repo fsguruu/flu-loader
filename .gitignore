@@ -18,3 +18,7 @@ __pycache__/
 downloads/
 data/
 *.db
+
+# Claude settings
+
+CLAUDE.md
