@@ -16,7 +16,7 @@ async def get_raw_audio(url: str, cobalt_data: dict = None) -> tuple:
     audio_path = None
     if cobalt_data and cobalt_data.get("audio_url"):
         audio_path = await download_temp_file(cobalt_data["audio_url"])
-        if audio_path and not audio_path.endswith((".jpg", ".png")):
+        if audio_path and audio_path.endswith((".jpg", ".png")):
             os.remove(audio_path)
             audio_path = None
 
