@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Local-only texts (swearing, jokes, fun command content)
+bot_msgs_local.py
+
+# Old, unused code kept locally (RapidAPI provider, old Shorts service)
+legacy/
+
+# Python / IDE
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+
+# Runtime data
+downloads/
+data/
+*.db
